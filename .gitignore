@@ -1,0 +1,86 @@
+# Dependencies
+node_modules/
+venv/
+env/
+.env
+
+# Build outputs
+dist/
+build/
+*.pyc
+__pycache__/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Configuration files with sensitive data
+config.ini
+secrets.json
+.env.local
+.env.production
+config.json
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
