@@ -1,8 +1,11 @@
 version: '3.8'
+
 services:
-  app:
+  keylogger-monitor:
     build: .
-    ports:
-      - "8080:80"
+    container_name: keylogger-monitor
+    restart: unless-stopped
     volumes:
-      - .:/app
+      - ./config.json:/app/config.json:ro
+    environment:
+      - PYTHONUNBUFFERED=1
