@@ -2,9 +2,24 @@ version: '3.8'
 
 services:
   keylogger-monitor:
-    build: .
-    container_name: keylogger-monitor
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: keylogger-monitor:latest
+    container_name: keylogger_monitor_app
     restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 64M
+        reservations:
+          cpus: '0.05'
+          memory: 16M
     volumes:
       - ./config.json:/app/config.json:ro
     environment:
